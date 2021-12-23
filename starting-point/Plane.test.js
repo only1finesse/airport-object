@@ -5,20 +5,20 @@ describe('Plane Class', () => {
 
 	const testPlane = new Plane('B500');
 
-	const passenger1 = new Person('Constance');
-	const passenger2 = new Person('Diana');
+	// const passenger1 = new Person('Constance');
+	// const passenger2 = new Person('Diana');
 
 
 	test('has a flight #', () => {
 		expect(testPlane.flightNumber).toBe('B500');
 	})
 
-	test('can have Passengers', () => {
-		testPlane.addPassenger(passenger1);
-		testPlane.addPassenger(passenger2);
+	// test('can have Passengers', () => {
+	// 	testPlane.addPassenger(passenger1);
+	// 	testPlane.addPassenger(passenger2);
 
-		expect(Array.isArray(testPlane.passengers)).toBeTruthy();
-		expect(testPlane.passengers.length).toBe(2)
-		expect(testPlane.passengers[0].name).toBe('Constance')
-	})
+	// 	expect(Array.isArray(testPlane.passengers)).toBeTruthy();
+	// 	expect(testPlane.passengers.length).toBe(2)
+	// 	expect(testPlane.passengers[0].name).toBe('Constance')
+	// })
 })
